@@ -30,4 +30,8 @@ Some example apps that you can use with FDC3
 
 - `step-4` Set up ngrok, updated app directory.
 
-- `step-5`
+- `step-5` Fixed ngrok urls, moved the app onto /crm
+
+> ok, time for a new application: github profiles. I want you to create a new page that connects to FDC3 and adds a context listener for the contact type. When it receives the context, it does a search of github using a URL like this: @https://api.github.com/search/users?q=win+morgan github returns JSON in this format: ...
+
+> add a new application for the github profiles

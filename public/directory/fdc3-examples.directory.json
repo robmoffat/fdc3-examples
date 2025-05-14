@@ -30,6 +30,37 @@
                     ]
                 }
             }
+        },
+        {
+            "appId": "github-profiles-1",
+            "name": "GitHub Profiles",
+            "title": "GitHub Profiles",
+            "description": "A GitHub profile viewer that demonstrates FDC3 contact integration",
+            "type": "web",
+            "details": {
+                "url": "https://3f6b-2605-bc0-1205-24-f5db-3a8e-6329-f6ae.ngrok-free.app/github"
+            },
+            "screenshots": [
+                {
+                    "src": "https://3f6b-2605-bc0-1205-24-f5db-3a8e-6329-f6ae.ngrok-free.app/github/screenshot.png",
+                    "label": "GitHub Profile View"
+                }
+            ],
+            "hostManifests": {},
+            "version": "1.0.0",
+            "publisher": "FINOS",
+            "icons": [
+                {
+                    "src": "https://3f6b-2605-bc0-1205-24-f5db-3a8e-6329-f6ae.ngrok-free.app/github/github-icon.svg"
+                }
+            ],
+            "interop": {
+                "userChannels": {
+                    "listensFor": [
+                        "fdc3.contact"
+                    ]
+                }
+            }
         }
     ],
     "message": "OK"
