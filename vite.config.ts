@@ -13,5 +13,8 @@ export default defineConfig({
         port: 3000,
         host: true, // Listen on all addresses
         open: true, // Open browser on start
+    },
+    json: {
+        stringify: true
     }
 }) 

@@ -1,0 +1,136 @@
+{
+    "contacts": [
+        {
+            "firstName": "Eteri",
+            "lastName": "Dvalishvili",
+            "email": "eteri.dvalishvili@finos.org",
+            "linkedinUrl": "https://www.linkedin.com/in/eteridvalishvili/",
+            "company": "FINOS",
+            "notes": "Has the most unique name in FINOS. Everyone spends 10 minutes practicing pronunciation before meetings. Still gets it wrong.",
+            "interactions": [
+                {
+                    "date": "2024-03-15",
+                    "notes": "Attempted to pronounce name correctly in meeting. Failed spectacularly. Eteri graciously pretended not to notice."
+                },
+                {
+                    "date": "2024-02-28",
+                    "notes": "Found out Eteri has been keeping a secret tally of unique mispronunciations. Currently at 147."
+                },
+                {
+                    "date": "2024-01-15",
+                    "notes": "Suggested adding name pronunciation guide to FDC3 spec. Eteri laughed for 10 minutes straight."
+                }
+            ]
+        },
+        {
+            "firstName": "Win",
+            "lastName": "Morgan",
+            "email": "win.morgan@finos.org",
+            "linkedinUrl": "https://www.linkedin.com/in/wmorgan/",
+            "company": "FINOS",
+            "notes": "Parents were clearly optimistic when naming him. Has lived up to it by winning at open source.",
+            "interactions": [
+                {
+                    "date": "2024-03-10",
+                    "notes": "Asked if he ever loses at anything. He said 'only at losing'. Classic Win."
+                },
+                {
+                    "date": "2024-02-20",
+                    "notes": "Discovered his middle name is 'Victory'. Parents were really committed to the theme."
+                },
+                {
+                    "date": "2024-01-30",
+                    "notes": "Tried to schedule a meeting but his calendar was already winning at being fully booked."
+                }
+            ]
+        },
+        {
+            "firstName": "Jane",
+            "lastName": "Gavronsky",
+            "email": "jane.gavronsky@finos.org",
+            "linkedinUrl": "https://www.linkedin.com/in/janegavronsky/",
+            "company": "FINOS",
+            "notes": "CTO who actually understands both tech AND finance. Suspected superhero, cape not yet confirmed.",
+            "interactions": [
+                {
+                    "date": "2024-03-12",
+                    "notes": "Explained blockchain to board members while simultaneously debugging a kernel issue. Still no visible cape."
+                },
+                {
+                    "date": "2024-02-15",
+                    "notes": "Found suspicious phone booth near office. Beginning to suspect Clark Kent-style situation."
+                },
+                {
+                    "date": "2024-01-20",
+                    "notes": "Witnessed her resolve three architectural debates with a single whiteboard diagram. Cape status: increasingly probable."
+                }
+            ]
+        },
+        {
+            "firstName": "Luca",
+            "lastName": "Borella",
+            "email": "luca.borella@finos.org",
+            "linkedinUrl": "https://www.linkedin.com/in/lucaborella/",
+            "company": "FINOS",
+            "notes": "Italian charm meets financial tech. Makes everything sound better with an Italian accent, even YAML configurations.",
+            "interactions": [
+                {
+                    "date": "2024-03-14",
+                    "notes": "Made 'JSON schema validation' sound like a fine wine description. Everyone was inexplicably convinced."
+                },
+                {
+                    "date": "2024-02-25",
+                    "notes": "Caught him explaining git rebase to his espresso machine in Italian. The coffee improved immediately."
+                },
+                {
+                    "date": "2024-01-25",
+                    "notes": "Proposed renaming 'bug fixes' to 'pasta patches'. Pull request pending."
+                }
+            ]
+        },
+        {
+            "firstName": "Rob",
+            "lastName": "Moffat",
+            "email": "robmoffat@mac.com",
+            "linkedinUrl": "https://www.linkedin.com/in/robmoffat/",
+            "company": "FINOS",
+            "notes": "The kind of developer who writes unit tests for his shopping lists. Has strong opinions about tea brewing algorithms.",
+            "interactions": [
+                {
+                    "date": "2024-03-13",
+                    "notes": "Submitted PR to optimize tea brewing process. Included 47 unit tests and a chaos monkey simulation."
+                },
+                {
+                    "date": "2024-02-22",
+                    "notes": "Overheard discussing the O(n) complexity of proper biscuit dunking techniques."
+                },
+                {
+                    "date": "2024-01-18",
+                    "notes": "Created JIRA ticket about implementing proper error handling for when someone puts milk in first. Priority: Critical."
+                }
+            ]
+        },
+        {
+            "firstName": "Karl",
+            "lastName": "Moll",
+            "email": "karl.moll@finos.org",
+            "linkedinUrl": "https://www.linkedin.com/in/karlmoll/",
+            "company": "FINOS",
+            "notes": "So efficient at managing projects, rumored to have cloned himself. No one has seen both Karls in the same room simultaneously.",
+            "interactions": [
+                {
+                    "date": "2024-03-11",
+                    "notes": "Somehow attended three meetings simultaneously. Clone theory gaining credibility."
+                },
+                {
+                    "date": "2024-02-18",
+                    "notes": "Asked about project timeline estimates. Got answer before finishing question. Suspiciously efficient."
+                },
+                {
+                    "date": "2024-01-22",
+                    "notes": "Spotted what appeared to be Karl in New York and London offices on same day. Investigation ongoing."
+                }
+            ]
+        }
+    ]
+}
