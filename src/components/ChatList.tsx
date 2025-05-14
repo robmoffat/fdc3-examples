@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react"
 import {Link} from "react-router-dom"
+import useFdc3ContactListener from "../hooks/useFdc3ContactListener"
 
 // Assuming CRM types are similar to what ChatMessagesPage might use
 interface CrmContact {
@@ -24,6 +25,8 @@ const formatChatName = (fileName: string): string => {
 }
 
 const ChatList: React.FC = () => {
+  useFdc3ContactListener()
+
   const [chats, setChats] = useState<string[]>([])
   const [loading, setLoading] = useState<boolean>(true)
   const [error, setError] = useState<string | null>(null)

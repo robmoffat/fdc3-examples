@@ -30,14 +30,18 @@ Some example apps that you can use with FDC3
 
 - `step-4` Set up ngrok, updated app directory.
 
-- `step-5` Fixed ngrok urls, moved the app onto /crm
+- `step-5` Fixed ngrok urls, moved the app onto /crm. Github profiles.
 
   > ok, time for a new application: github profiles. I want you to create a new page that connects to FDC3 and adds a context listener for the contact type. When it receives the context, it does a search of github using a URL like this: @https://api.github.com/search/users?q=win+morgan github returns JSON in this format: ...
 
   > add a new application for the github profiles
 
-- `step-6` Integration with the chat application
+- `step-6` Chat application
 
   > ok, we now need a third example app, a chat app. So, let's create some data to hold the previous chats. For four of the people in the CRM, I want you to create a JSON file for the chat info, named firstname_lastname.json. In this create sample chat records. It should be an array with fields time, a boolean for who is talking and the message.
 
   > create a screen to open the chat with the chat messages displayed if they exist.
+
+- `step-7` FDC3 for Chat Application
+
+> now, I want you to do the FDC3 integation for the chat app. It's the same for both pages, so do it in a file that we can pull in to both the main list and the detail page. Do getClient() then add a context handler for the fdc3.contact. If the contact is in the list of chats, open it otherwise open a new chat with the contact.
