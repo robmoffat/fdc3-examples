@@ -1,0 +1,22 @@
+[
+    {
+        "time": "2024-07-15T10:00:00Z",
+        "who_is_talking": true,
+        "message": "Hi Eteri, how are you doing today?"
+    },
+    {
+        "time": "2024-07-15T10:00:30Z",
+        "who_is_talking": false,
+        "message": "I'm doing great, thanks for asking! Just working on the new FDC3 spec."
+    },
+    {
+        "time": "2024-07-15T10:01:00Z",
+        "who_is_talking": true,
+        "message": "Oh, exciting! Anything interesting you can share?"
+    },
+    {
+        "time": "2024-07-15T10:01:30Z",
+        "who_is_talking": false,
+        "message": "We're looking at some new context types and trying to simplify the intent resolution. It's going to be awesome!"
+    }
+]

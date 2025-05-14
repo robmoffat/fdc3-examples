@@ -61,6 +61,37 @@
                     ]
                 }
             }
+        },
+        {
+            "appId": "chat-app-1",
+            "name": "Chat App",
+            "title": "Chat App",
+            "description": "A messaging application to view chat histories.",
+            "type": "web",
+            "details": {
+                "url": "https://3f6b-2605-bc0-1205-24-f5db-3a8e-6329-f6ae.ngrok-free.app/chat"
+            },
+            "screenshots": [
+                {
+                    "src": "https://3f6b-2605-bc0-1205-24-f5db-3a8e-6329-f6ae.ngrok-free.app/chat/screenshot.png",
+                    "label": "Chat App Main View"
+                }
+            ],
+            "hostManifests": {},
+            "version": "1.0.0",
+            "publisher": "FINOS",
+            "icons": [
+                {
+                    "src": "https://3f6b-2605-bc0-1205-24-f5db-3a8e-6329-f6ae.ngrok-free.app/chat/chat-icon.svg"
+                }
+            ],
+            "interop": {
+                "userChannels": {
+                    "listensFor": [
+                        "fdc3.contact"
+                    ]
+                }
+            }
         }
     ],
     "message": "OK"

@@ -1,0 +1,22 @@
+[
+    {
+        "time": "2024-07-17T14:30:00Z",
+        "who_is_talking": true,
+        "message": "Win, you are a winner! That last PR was merged so quickly!"
+    },
+    {
+        "time": "2024-07-17T14:30:25Z",
+        "who_is_talking": false,
+        "message": "Thanks! Just trying to win at open source, you know?"
+    },
+    {
+        "time": "2024-07-17T14:31:00Z",
+        "who_is_talking": true,
+        "message": "How do you manage to stay on top of all the FINOS projects? It feels like you're everywhere."
+    },
+    {
+        "time": "2024-07-17T14:31:50Z",
+        "who_is_talking": false,
+        "message": "It's all about efficient context switching. And a calendar that's winning at being organized!"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "time": "2024-07-18T09:15:00Z",
+        "who_is_talking": false,
+        "message": "Morning Jane! Quick question about the new security protocol for FDC3 intents."
+    },
+    {
+        "time": "2024-07-18T09:15:30Z",
+        "who_is_talking": true,
+        "message": "Good morning! Shoot. Is it about the intent whitelisting or the data masking for sensitive contexts?"
+    },
+    {
+        "time": "2024-07-18T09:16:10Z",
+        "who_is_talking": false,
+        "message": "The whitelisting. I was wondering if we have a PoC for how a desktop agent would manage that dynamically."
+    },
+    {
+        "time": "2024-07-18T09:17:00Z",
+        "who_is_talking": true,
+        "message": "Yes, I have a draft proposal. I'll share it with you. It involves a secure channel for app manifests and runtime permission checks. No capes required, I promise."
+    }
+]

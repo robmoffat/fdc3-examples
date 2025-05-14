@@ -1,0 +1,22 @@
+[
+    {
+        "time": "2024-07-16T11:00:00Z",
+        "who_is_talking": false,
+        "message": "Hey Aaron, got a minute to chat about the FDC3 integration?"
+    },
+    {
+        "time": "2024-07-16T11:00:20Z",
+        "who_is_talking": true,
+        "message": "Sure, what's up? Bear with me, I'm just finishing a honey-based authentication demo."
+    },
+    {
+        "time": "2024-07-16T11:01:00Z",
+        "who_is_talking": false,
+        "message": "Haha, classic Grizz! I was wondering about the context propagation for the new trade order ticket."
+    },
+    {
+        "time": "2024-07-16T11:01:45Z",
+        "who_is_talking": true,
+        "message": "Ah, yes! We need to make sure the `fdc3.instrument` is correctly passed. I can show you how we did it in the Blazor app, it was un-bear-ably clever!"
+    }
+]

@@ -2,6 +2,8 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import {ContactTable} from "@/components/ContactTable"
 import {ContactDetails} from "@/components/ContactDetails"
 import {GitHubProfiles} from "@/components/GitHubProfiles"
+import ChatList from "@/components/ChatList"
+import ChatMessagesPage from "@/components/ChatMessagesPage"
 import {useEffect} from "react"
 import {getAgent} from "@finos/fdc3"
 
@@ -36,6 +38,8 @@ function App() {
               />
               <Route path="/crm/contact/:email" element={<ContactDetails />} />
               <Route path="/github" element={<GitHubProfiles />} />
+              <Route path="/chat" element={<ChatList />} />
+              <Route path="/chat/:chatId" element={<ChatMessagesPage />} />
             </Routes>
           </div>
         </div>
