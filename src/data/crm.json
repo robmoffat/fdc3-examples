@@ -4,7 +4,7 @@
             "firstName": "Eteri",
             "lastName": "Dvalishvili",
             "email": "eteri.dvalishvili@finos.org",
-            "linkedinUrl": "https://www.linkedin.com/in/eteridvalishvili/",
+            "linkedinUrl": "https://www.linkedin.com/in/eteri-dvalishvili//",
             "company": "FINOS",
             "notes": "Has the most unique name in FINOS. Everyone spends 10 minutes practicing pronunciation before meetings. Still gets it wrong.",
             "interactions": [
@@ -23,10 +23,32 @@
             ]
         },
         {
+            "firstName": "Aaron",
+            "lastName": "Griswold",
+            "email": "grizz@finos.org",
+            "linkedinUrl": "https://www.linkedin.com/in/aarongriswold/",
+            "company": "FINOS",
+            "notes": "Known as 'Grizz'. Not because he's grizzled, but because he can explain complex financial protocols while doing a perfect bear impression.",
+            "interactions": [
+                {
+                    "date": "2024-03-16",
+                    "notes": "Demonstrated FDC3 context channels using interpretive dance. Surprisingly effective."
+                },
+                {
+                    "date": "2024-02-14",
+                    "notes": "Convinced everyone to use 'bear market' puns in all documentation. Code review became unbearable."
+                },
+                {
+                    "date": "2024-01-10",
+                    "notes": "Started a meeting with a live demo of honey-based API authentication. Actually worked."
+                }
+            ]
+        },
+        {
             "firstName": "Win",
             "lastName": "Morgan",
             "email": "win.morgan@finos.org",
-            "linkedinUrl": "https://www.linkedin.com/in/wmorgan/",
+            "linkedinUrl": "https://www.linkedin.com/in/winmorgan/",
             "company": "FINOS",
             "notes": "Parents were clearly optimistic when naming him. Has lived up to it by winning at open source.",
             "interactions": [
@@ -70,7 +92,7 @@
             "firstName": "Luca",
             "lastName": "Borella",
             "email": "luca.borella@finos.org",
-            "linkedinUrl": "https://www.linkedin.com/in/lucaborella/",
+            "linkedinUrl": "https://www.linkedin.com/in/borellaluca/",
             "company": "FINOS",
             "notes": "Italian charm meets financial tech. Makes everything sound better with an Italian accent, even YAML configurations.",
             "interactions": [
@@ -114,7 +136,7 @@
             "firstName": "Karl",
             "lastName": "Moll",
             "email": "karl.moll@finos.org",
-            "linkedinUrl": "https://www.linkedin.com/in/karlmoll/",
+            "linkedinUrl": "https://www.linkedin.com/in/karl-moll/",
             "company": "FINOS",
             "notes": "So efficient at managing projects, rumored to have cloned himself. No one has seen both Karls in the same room simultaneously.",
             "interactions": [
