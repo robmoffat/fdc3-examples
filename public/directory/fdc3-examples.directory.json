@@ -1,0 +1,36 @@
+{
+    "applications": [
+        {
+            "appId": "super-duper-crm-1",
+            "name": "Super-Duper CRM",
+            "title": "Super-Duper CRM",
+            "description": "A CRM application that demonstrates FDC3 contact broadcasting",
+            "type": "web",
+            "details": {
+                "url": "http://localhost:5173"
+            },
+            "screenshots": [
+                {
+                    "src": "/crm/screenshot.png",
+                    "label": "CRM Contact View"
+                }
+            ],
+            "hostManifests": {},
+            "version": "1.0.0",
+            "publisher": "FINOS",
+            "icons": [
+                {
+                    "src": "/crm/crm-icon.svg"
+                }
+            ],
+            "interop": {
+                "ueerChannels": {
+                    "broadcasts": [
+                        "fdc3.contact"
+                    ]
+                }
+            }
+        }
+    ],
+    "message": "OK"
+}

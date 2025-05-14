@@ -3,6 +3,7 @@ import {Table, TableBody, TableCell, TableHead, TableHeader, TableRow} from "@/c
 import {Button} from "@/components/ui/button"
 import {useNavigate, useParams} from "react-router-dom"
 import crmData from "@/data/crm.json"
+import {getAgent} from "@finos/fdc3"
 
 interface Interaction {
   date: string
@@ -28,6 +29,31 @@ export function ContactDetails() {
     const foundContact = crmData.contacts.find((c) => c.email === email)
     setContact(foundContact || null)
   }, [email])
+
+  useEffect(() => {
+    if (contact) {
+      // Broadcast contact information using FDC3
+      const fdc3Contact = {
+        type: "fdc3.contact",
+        name: `${contact.firstName} ${contact.lastName}`,
+        id: {
+          email: contact.email,
+        },
+      } as const
+
+      const broadcastContact = async () => {
+        try {
+          const agent = await getAgent()
+          await agent.broadcast(fdc3Contact)
+          console.log("Successfully broadcast contact:", contact.email)
+        } catch (error) {
+          console.error("Error broadcasting contact:", error)
+        }
+      }
+
+      broadcastContact()
+    }
+  }, [contact])
 
   if (!contact) return <div>Contact not found</div>
 
