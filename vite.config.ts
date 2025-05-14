@@ -13,6 +13,7 @@ export default defineConfig({
         port: 5173,
         host: true, // Listen on all addresses
         open: true, // Open browser on start
+        allowedHosts: true // Allow all hosts
     },
     publicDir: 'public',
     json: {

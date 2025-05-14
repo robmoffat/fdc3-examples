@@ -59,7 +59,7 @@ export function ContactDetails() {
 
   return (
     <div className="space-y-8">
-      <Button variant="ghost" onClick={() => navigate("/")} className="mb-4">
+      <Button variant="ghost" onClick={() => navigate("/crm")} className="mb-4">
         ← Back to Directory
       </Button>
 

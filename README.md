@@ -27,3 +27,7 @@ Some example apps that you can use with FDC3
   > ok. Don't use window.fdc3. Instead, use getAgent(). It returns a promise with the DesktopAgent object inside it. getAgent() is idempotent
 
   > @benzinga.json ok, to test out our new CRM with FDC3, we're going to need a directory. This will need to be hosted by vite on some URL for Sail to access it. Take a look at the benzinga.json file to see an example of an app directory entry. We'll need one of these for our Super-Duper CRM
+
+- `step-4` Set up ngrok, updated app directory.
+
+- `step-5`

@@ -35,7 +35,7 @@ export function ContactTable() {
             <TableRow key={contact.email} className="hover:bg-slate-50 dark:hover:bg-slate-800/50 cursor-pointer transition-colors">
               <TableCell
                 className="font-medium text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
-                onClick={() => navigate(`/contact/${encodeURIComponent(contact.email)}`)}>
+                onClick={() => navigate(`/crm/contact/${encodeURIComponent(contact.email)}`)}>
                 {contact.firstName}
               </TableCell>
               <TableCell className="text-slate-700 dark:text-slate-300">{contact.lastName}</TableCell>

@@ -7,11 +7,11 @@
             "description": "A CRM application that demonstrates FDC3 contact broadcasting",
             "type": "web",
             "details": {
-                "url": "http://localhost:5173"
+                "url": "https://3f6b-2605-bc0-1205-24-f5db-3a8e-6329-f6ae.ngrok-free.app/crm"
             },
             "screenshots": [
                 {
-                    "src": "/crm/screenshot.png",
+                    "src": "https://3f6b-2605-bc0-1205-24-f5db-3a8e-6329-f6ae.ngrok-free.app/crm/screenshot.png",
                     "label": "CRM Contact View"
                 }
             ],
@@ -20,7 +20,7 @@
             "publisher": "FINOS",
             "icons": [
                 {
-                    "src": "/crm/crm-icon.svg"
+                    "src": "https://3f6b-2605-bc0-1205-24-f5db-3a8e-6329-f6ae.ngrok-free.app/crm/crm-icon.svg"
                 }
             ],
             "interop": {
