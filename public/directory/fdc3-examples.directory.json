@@ -59,6 +59,15 @@
                     "listensFor": [
                         "fdc3.contact"
                     ]
+                },
+                "intents": {
+                    "listensFor": {
+                        "ViewProfile": {
+                            "contexts": [
+                                "fdc3.contact"
+                            ]
+                        }
+                    }
                 }
             }
         },
@@ -90,6 +99,15 @@
                     "listensFor": [
                         "fdc3.contact"
                     ]
+                },
+                "intents": {
+                    "listensFor": {
+                        "ViewChat": {
+                            "contexts": [
+                                "fdc3.contact"
+                            ]
+                        }
+                    }
                 }
             }
         }
