@@ -1,5 +1,5 @@
 import {useState} from "react"
-import {Channel, getAgent, Context, IntentResolution, Instrument} from "@finos/fdc3"
+import {Channel, getAgent, Context, IntentResolution, Instrument, AppIntent} from "@finos/fdc3"
 
 const context: Instrument = {
   type: "fdc3.instrument",
@@ -18,8 +18,21 @@ interface ChannelMessages {
 export function IntentRaiser() {
   const [status, setStatus] = useState<string>("")
   const [channels, setChannels] = useState<ChannelMessages[]>([])
+  const [availableIntents, setAvailableIntents] = useState<AppIntent[]>([])
 
-  const raiseIntent = async () => {
+  const findIntents = async () => {
+    try {
+      const fdc3 = await getAgent()
+      const intents = await fdc3.findIntentsByContext(context)
+      setAvailableIntents(intents)
+      setStatus("Found available intents")
+    } catch (error) {
+      console.error("Failed to find intents:", error)
+      setStatus("Failed to find intents. See console for details.")
+    }
+  }
+
+  const raiseIntentForContext = async () => {
     try {
       const fdc3 = await getAgent()
       const resolution = await fdc3.raiseIntentForContext(context)
@@ -40,13 +53,83 @@ export function IntentRaiser() {
     }
   }
 
+  const raiseSpecificIntent = async (intentName: string) => {
+    try {
+      const fdc3 = await getAgent()
+      const resolution = await fdc3.raiseIntent(intentName, context)
+      const channel = (await resolution.getResult()) as Channel
+
+      // Add new channel to state
+      setChannels((prev) => [...prev, {channelId: channel.id, instrument: context, messages: []}])
+
+      // Listen for messages on this channel
+      channel.addContextListener(null, (context: Context) => {
+        setChannels((prev) => prev.map((ch) => (ch.channelId === channel.id ? {...ch, messages: [...ch.messages, context]} : ch)))
+      })
+
+      setStatus(`Intent ${intentName} raised successfully!`)
+    } catch (error) {
+      console.error("Failed to raise intent:", error)
+      setStatus("Failed to raise intent. See console for details.")
+    }
+  }
+
+  const raiseGetAlerts = async () => {
+    try {
+      const fdc3 = await getAgent()
+      const resolution = await fdc3.raiseIntent("GetAlerts", context)
+      const channel = (await resolution.getResult()) as Channel
+
+      // Add new channel to state
+      setChannels((prev) => [...prev, {channelId: channel.id, instrument: context, messages: []}])
+
+      // Listen for messages on this channel
+      channel.addContextListener(null, (context: Context) => {
+        setChannels((prev) => prev.map((ch) => (ch.channelId === channel.id ? {...ch, messages: [...ch.messages, context]} : ch)))
+      })
+
+      setStatus("GetAlerts intent raised successfully!")
+    } catch (error) {
+      console.error("Failed to raise GetAlerts intent:", error)
+      setStatus("Failed to raise GetAlerts intent. See console for details.")
+    }
+  }
+
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Intent Raiser Demo</h1>
       <pre className="mb-4">{JSON.stringify(context, null, 2)}</pre>
-      <button onClick={raiseIntent} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-        Raise Intent
-      </button>
+
+      <div className="space-y-4">
+        <div className="flex gap-4">
+          <button onClick={raiseGetAlerts} className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600">
+            Raise GetAlerts Intent
+          </button>
+          <button onClick={raiseIntentForContext} className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">
+            Raise Intent For Context
+          </button>
+          <button onClick={findIntents} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            Find Available Intents
+          </button>
+        </div>
+
+        {availableIntents.length > 0 && (
+          <div className="border rounded p-4">
+            <h2 className="text-xl font-semibold mb-2">Available Intents</h2>
+            <div className="space-y-2">
+              {availableIntents.map((appIntent) => (
+                <div key={appIntent.intent.name} className="flex items-center gap-4">
+                  <span className="font-medium">{appIntent.intent.name}</span>
+                  <button onClick={() => raiseSpecificIntent(appIntent.intent.name)} className="px-3 py-1 bg-green-500 text-white rounded hover:bg-green-600">
+                    Raise Intent
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
       {status && <p className="mt-4 text-slate-600">{status}</p>}
 
       <div className="mt-8 space-y-4">

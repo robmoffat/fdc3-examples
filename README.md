@@ -1,6 +1,9 @@
 # fdc3-examples
 
-Some example apps that you can use with FDC3
+Some example apps that you can use with FDC3.
+
+CRM Examples: http://localhost:5173/directory/crm-examples.directory.json
+Intent Examples: http://localhost:5173/directory/intent-examples.directory.json
 
 # Branch Details
 
@@ -45,3 +48,7 @@ Some example apps that you can use with FDC3
 - `step-7` FDC3 for Chat Application
 
 > now, I want you to do the FDC3 integation for the chat app. It's the same for both pages, so do it in a file that we can pull in to both the main list and the detail page. Do getClient() then add a context handler for the fdc3.contact. If the contact is in the list of chats, open it otherwise open a new chat with the contact.
+
+# Fidelity Demo
+
+- Added the intent raiser and intent resolver demos, which also use private channel functionality.
