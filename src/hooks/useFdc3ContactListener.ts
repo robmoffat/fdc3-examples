@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getAgent, Contact as Fdc3Contact, Listener, IntentResolution } from '@finos/fdc3';
+import { getAgent, Contact as Fdc3Contact, Listener } from '@finos/fdc3';
 
 // Removed CrmContactEntry and CrmData interfaces as CRM data is no longer fetched
 

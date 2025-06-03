@@ -2,14 +2,6 @@ import React, {useEffect, useState} from "react"
 import {Link} from "react-router-dom"
 import useFdc3ContactListener from "../hooks/useFdc3ContactListener"
 
-// Assuming CRM types are similar to what ChatMessagesPage might use
-interface CrmContact {
-  firstName: string
-  lastName: string
-  email: string
-  // other fields...
-}
-
 // Placeholder for a function that lists chat files
 // In a real app, this would involve a backend call or a specific file system API if run in Node.js
 // For this example, we'll simulate it based on the known chat files.
