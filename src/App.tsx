@@ -4,6 +4,8 @@ import {ContactDetails} from "@/components/ContactDetails"
 import {GitHubProfiles} from "@/components/GitHubProfiles"
 import ChatList from "@/components/ChatList"
 import ChatMessagesPage from "@/components/ChatMessagesPage"
+import {IntentRaiser} from "@/components/IntentRaiser"
+import {IntentResolver} from "@/components/IntentResolver"
 import {useEffect} from "react"
 import {getAgent} from "@finos/fdc3"
 
@@ -40,6 +42,8 @@ function App() {
               <Route path="/github" element={<GitHubProfiles />} />
               <Route path="/chat" element={<ChatList />} />
               <Route path="/chat/:chatId" element={<ChatMessagesPage />} />
+              <Route path="/intent-raiser" element={<IntentRaiser />} />
+              <Route path="/intent-resolver" element={<IntentResolver />} />
             </Routes>
           </div>
         </div>

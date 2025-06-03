@@ -7,11 +7,11 @@
             "description": "A CRM application that demonstrates FDC3 contact broadcasting",
             "type": "web",
             "details": {
-                "url": "https://8c8b-2a06-61c0-8ac-0-c473-c0c5-e7ce-2e16.ngrok-free.app/crm"
+                "url": "http://localhost:5173/crm"
             },
             "screenshots": [
                 {
-                    "src": "https://8c8b-2a06-61c0-8ac-0-c473-c0c5-e7ce-2e16.ngrok-free.app/crm/screenshot.png",
+                    "src": "http://localhost:5173/crm/screenshot.png",
                     "label": "CRM Contact View"
                 }
             ],
@@ -20,7 +20,7 @@
             "publisher": "FINOS",
             "icons": [
                 {
-                    "src": "https://8c8b-2a06-61c0-8ac-0-c473-c0c5-e7ce-2e16.ngrok-free.app/crm/crm-icon.svg"
+                    "src": "http://localhost:5173/crm/crm-icon.svg"
                 }
             ],
             "interop": {
@@ -38,11 +38,11 @@
             "description": "A GitHub profile viewer that demonstrates FDC3 contact integration",
             "type": "web",
             "details": {
-                "url": "https://8c8b-2a06-61c0-8ac-0-c473-c0c5-e7ce-2e16.ngrok-free.app/github"
+                "url": "http://localhost:5173/github"
             },
             "screenshots": [
                 {
-                    "src": "https://8c8b-2a06-61c0-8ac-0-c473-c0c5-e7ce-2e16.ngrok-free.app/github/screenshot.png",
+                    "src": "http://localhost:5173/github/screenshot.png",
                     "label": "GitHub Profile View"
                 }
             ],
@@ -51,7 +51,7 @@
             "publisher": "FINOS",
             "icons": [
                 {
-                    "src": "https://8c8b-2a06-61c0-8ac-0-c473-c0c5-e7ce-2e16.ngrok-free.app/github/github-icon.svg"
+                    "src": "http://localhost:5173/github/github-icon.svg"
                 }
             ],
             "interop": {
@@ -78,11 +78,11 @@
             "description": "A messaging application to view chat histories.",
             "type": "web",
             "details": {
-                "url": "https://8c8b-2a06-61c0-8ac-0-c473-c0c5-e7ce-2e16.ngrok-free.app/chat"
+                "url": "http://localhost:5173/chat"
             },
             "screenshots": [
                 {
-                    "src": "https://8c8b-2a06-61c0-8ac-0-c473-c0c5-e7ce-2e16.ngrok-free.app/chat/screenshot.png",
+                    "src": "http://localhost:5173/chat/screenshot.png",
                     "label": "Chat App Main View"
                 }
             ],
@@ -91,7 +91,7 @@
             "publisher": "FINOS",
             "icons": [
                 {
-                    "src": "https://8c8b-2a06-61c0-8ac-0-c473-c0c5-e7ce-2e16.ngrok-free.app/chat/chat-icon.svg"
+                    "src": "http://localhost:5173/chat/chat-icon.svg"
                 }
             ],
             "interop": {

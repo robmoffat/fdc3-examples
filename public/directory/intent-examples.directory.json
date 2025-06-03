@@ -1,0 +1,74 @@
+{
+    "applications": [
+        {
+            "appId": "intent-raiser-1",
+            "name": "Intent Raiser",
+            "title": "Intent Raiser",
+            "description": "An example app that demonstrates FDC3 intent raising",
+            "type": "web",
+            "details": {
+                "url": "http://localhost:5173/intent-raiser"
+            },
+            "screenshots": [
+                {
+                    "src": "http://localhost:5173/intents/raiser/screenshot.png",
+                    "label": "CRM Contact View"
+                }
+            ],
+            "hostManifests": {},
+            "version": "1.0.0",
+            "publisher": "FINOS",
+            "icons": [
+                {
+                    "src": "http://localhost:5173/intents/raiser/icon.png"
+                }
+            ],
+            "interop": {
+                "intents": {
+                    "raises": {
+                        "GetAlerts": [
+                            "fdc3.instrument"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "appId": "intent-resolver-1",
+            "name": "Intent Resolver",
+            "title": "Intent Resolver",
+            "description": "An example app that demonstrates intent resolution",
+            "type": "web",
+            "details": {
+                "url": "http://localhost:5173/intent-resolver"
+            },
+            "screenshots": [
+                {
+                    "src": "http://localhost:5173/intents/resolver/screenshot.png",
+                    "label": "GitHub Profile View"
+                }
+            ],
+            "hostManifests": {},
+            "version": "1.0.0",
+            "publisher": "FINOS",
+            "icons": [
+                {
+                    "src": "http://localhost:5173/intents/resolver/icon.png"
+                }
+            ],
+            "interop": {
+                "intents": {
+                    "listensFor": {
+                        "GetAlerts": {
+                            "contexts": [
+                                "fdc3.instrument"
+                            ],
+                            "resultType": "channel<fidelity.trade-signal>"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "message": "OK"
+}
