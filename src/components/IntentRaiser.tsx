@@ -36,15 +36,7 @@ export function IntentRaiser() {
     try {
       const fdc3 = await getAgent()
       const resolution = await fdc3.raiseIntentForContext(context)
-      const channel = (await resolution.getResult()) as Channel
-
-      // Add new channel to state
-      setChannels((prev) => [...prev, {channelId: channel.id, instrument: context, messages: []}])
-
-      // Listen for messages on this channel
-      channel.addContextListener(null, (context: Context) => {
-        setChannels((prev) => prev.map((ch) => (ch.channelId === channel.id ? {...ch, messages: [...ch.messages, context]} : ch)))
-      })
+      handleResolution(resolution)
 
       setStatus("Intent raised successfully!")
     } catch (error) {
@@ -57,15 +49,7 @@ export function IntentRaiser() {
     try {
       const fdc3 = await getAgent()
       const resolution = await fdc3.raiseIntent(intentName, context)
-      const channel = (await resolution.getResult()) as Channel
-
-      // Add new channel to state
-      setChannels((prev) => [...prev, {channelId: channel.id, instrument: context, messages: []}])
-
-      // Listen for messages on this channel
-      channel.addContextListener(null, (context: Context) => {
-        setChannels((prev) => prev.map((ch) => (ch.channelId === channel.id ? {...ch, messages: [...ch.messages, context]} : ch)))
-      })
+      handleResolution(resolution)
 
       setStatus(`Intent ${intentName} raised successfully!`)
     } catch (error) {
@@ -148,4 +132,18 @@ export function IntentRaiser() {
       </div>
     </div>
   )
+
+  async function handleResolution(resolution: IntentResolution) {
+    const channel = (await resolution.getResult()) as Channel
+
+    if (channel) {
+      // Add new channel to state
+      setChannels((prev) => [...prev, {channelId: channel.id, instrument: context, messages: []}])
+
+      // Listen for messages on this channel
+      channel.addContextListener(null, (context: Context) => {
+        setChannels((prev) => prev.map((ch) => (ch.channelId === channel.id ? {...ch, messages: [...ch.messages, context]} : ch)))
+      })
+    }
+  }
 }
